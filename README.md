@@ -13,7 +13,7 @@ dig @127.0.0.1 -p 2053 google.com
 ## Roadmap
 
 - [x] **Stage 0: Listen.** Bind a UDP socket and hex-dump incoming queries.
-- [ ] **Stage 1: Header.** Parse the 12-byte header (ID, flags, section counts).
+- [x] **Stage 1: Header.** Parse the 12-byte header (ID, flags, section counts).
 - [ ] **Stage 2: Question.** Parse domain names (length-prefixed labels), QTYPE and QCLASS.
 - [ ] **Stage 3: First answer.** Build a response by hand and make `dig` accept it (answer every A query with `1.2.3.4`).
 - [ ] **Stage 4: Forwarder.** Pass queries to an upstream resolver (e.g. `1.1.1.1`) and relay the answer back.
